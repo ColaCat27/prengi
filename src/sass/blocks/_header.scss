@@ -1,0 +1,27 @@
+.header {
+    padding: 20px 0 19px 0;
+    .contacts {
+        display: flex;
+        justify-content: space-between;
+        &__item {
+            display: flex;
+            align-items: flex-start;
+        }
+        &__img {
+            height: 21px;
+            margin-right: 11px;
+            margin-top: 3px;
+        }
+        &__info {
+            color: #242424;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 18px;
+            span {
+                font-size: 14px;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+    }
+}
