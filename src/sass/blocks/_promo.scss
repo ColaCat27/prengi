@@ -1,11 +1,11 @@
 .promo {
-    min-height: 700px;
+    min-height: 680px;
     padding: 39px 0 68px 0;
     background: url('../img/main-bg.jpg') center (center/cover) no-repeat;
-    &__content {
+    &__wrapper {
         display: flex;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
     }
     &__logo {
         img {
@@ -18,34 +18,35 @@
     &__list {
         display: flex;
         justify-content: space-between;
+        list-style-type: none;
         margin-bottom: 0px;
         padding-left: 0px;
-        list-style-type: none;
     }
     &__link {
         color: #ffffff;
         font-size: 13px;
-        font-weight: 700;
-        line-height: 26px;
+        font-weight: 400;
         text-transform: uppercase;
         &:hover {
-            text-decoration: none;
             color: #fff;
+            text-decoration: none;
         }
     }
-    &__wrapper {
-        margin-top: 133px;
+    &-offer {
+        margin-top: 56px;
+        position: relative;
+        min-height: 569px;
+        display: flex;
+        justify-content: space-between;
     }
-    &__text {
-        max-width: 524px;
-    }
-    &__header {
+    &-offer__header {
+        margin-top: 106px;
         color: #ffffff;
         font-size: 42px;
-        font-weight: 900;
+        font-weight: 400;
         line-height: 48px;
     }
-    &__subheader {
+    &-offer__subheader {
         color: #ffffff;
         font-size: 24px;
         font-weight: 300;
@@ -55,5 +56,13 @@
             font-weight: 400;
         }
     }
-
+    &-offer__wrapper {
+        max-width: 530px;
+    }
+    &-offer__img {
+        max-height: 100%;
+        position: absolute;
+        right: 0;
+        bottom: -68px;
+    }
 }
