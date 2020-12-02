@@ -1,6 +1,6 @@
 .promo {
     min-height: 680px;
-    padding: 39px 0 68px 0;
+    padding: 39px 0 0 0;
     background: url('../img/main-bg.jpg') center (center/cover) no-repeat;
     &__wrapper {
         display: flex;
@@ -63,6 +63,34 @@
         max-height: 100%;
         position: absolute;
         right: 0;
-        bottom: -68px;
+        bottom: 0;
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: 68px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        margin-bottom: 0px;
+        padding-left: 0px;
+        list-style-type: none;
+        li {
+            width: 11px;
+            height: 11px;
+            border-radius: 100%;
+            border: 1px solid #fff;
+            &.slick-active {
+                background-color: #fff;
+                button {
+                    outline: none;
+                }
+            }
+            button {
+                font-size: 0px;
+                border: none;
+                background: none;
+            }
+        }
+
     }
 }
