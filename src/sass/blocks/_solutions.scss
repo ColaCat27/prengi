@@ -2,12 +2,6 @@
     padding: 79px 0 61px 0;
     background: url('../../img/second-bg.jpg') center (center / cover) no-repeat;
     height: 889px;
-    &__header {
-        color: #ffffff;
-        font-size: 30px;
-        font-weight: 900;
-        text-align: center;
-    }
     &__tabs {
         max-width: 843px;
         margin: 0 auto;
@@ -19,13 +13,14 @@
         border-radius: 4px;
     }
     &__tab {
-        padding: 25px 26px;
+        width: 16.6%;
         color: #ffffff;
         font-size: 14px;
         font-weight: 300;
         text-align: center;
         cursor: pointer;
         position: relative;
+        line-height: 50px;
         &:after {
             content: '';
             position: absolute;
@@ -44,5 +39,26 @@
             font-weight: 700;
         }
     }
-
+    &__carousel {
+        height: 560px;
+        width: 950px;
+        margin: 0 auto;
+        margin-top: 45px;
+        background: url('../../img/macbook-air.png') center (center / cover) no-repeat;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        img {
+            position: absolute;
+            width: 75%;
+            top: 35px;
+            left: 115px;
+        }
+    }
+    &__content {
+        display: none;
+        &_active {
+            display: block;
+        }
+    }
 }
