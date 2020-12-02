@@ -74,11 +74,14 @@
         margin-bottom: 0px;
         padding-left: 0px;
         list-style-type: none;
+        width: 70px;
+        justify-content: space-between;
         li {
             width: 11px;
             height: 11px;
             border-radius: 100%;
             border: 1px solid #fff;
+            cursor: pointer;
             &.slick-active {
                 background-color: #fff;
                 button {
@@ -91,6 +94,25 @@
                 background: none;
             }
         }
-
+    }
+    .slick-active {
+        outline: none;
+        border: none;
+    }
+    .slick-prev, .slick-next {
+        border: none;
+        background: none;
+        outline: none;
+        position: absolute;
+    }
+    .slick-prev {
+        bottom: 61px;
+        left: 46%;
+        transform: translateX(-70%);
+    }
+    .slick-next {
+        bottom: 61px;
+        right: 44%;
+        transform: translateX(-50%);
     }
 }
