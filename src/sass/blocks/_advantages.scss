@@ -1,0 +1,21 @@
+.advantages {
+    padding: 79px 0 81px 0;
+    &__content {
+        display: flex;
+    }
+    &__item {
+        width: 360px;
+        height: 255px;
+        border: 1px solid #ececec;
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+    &__descr {
+        width: 264px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}

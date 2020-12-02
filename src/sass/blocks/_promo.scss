@@ -104,15 +104,17 @@
         background: none;
         outline: none;
         position: absolute;
+        width: 6px;
+        height: 11px;
     }
     .slick-prev {
-        bottom: 61px;
-        left: 46%;
-        transform: translateX(-70%);
+        bottom: 76px;
+        left: 45%;
+        transform: translateX(-45%);
     }
     .slick-next {
-        bottom: 61px;
+        bottom: 76px;
         right: 44%;
-        transform: translateX(-50%);
+        transform: translateX(-43%);
     }
 }
