@@ -21,6 +21,10 @@
         cursor: pointer;
         position: relative;
         line-height: 50px;
+        transition: 0.2s all;
+        &:hover {
+            color: rgba(255,255,255,0.6);
+        }
         &:after {
             content: '';
             position: absolute;
@@ -37,6 +41,9 @@
         &_active {
             color: #00c2f0;
             font-weight: 700;
+            &:hover {
+                color: #00c2f0;
+            }
         }
     }
     &__carousel {

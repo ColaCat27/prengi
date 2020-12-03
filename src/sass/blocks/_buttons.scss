@@ -10,6 +10,10 @@
     font-weight: 700;
     line-height: 30px;
     text-transform: uppercase;
+    transition: 0.5s all;
+    &:hover {
+        background-color: $hover-color;
+    }
     &_mt39 {
         margin-top: 39px;
     }
