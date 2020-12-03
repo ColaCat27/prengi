@@ -1,7 +1,6 @@
 .solutions {
     padding: 79px 0 61px 0;
     background: url('../../img/second-bg.jpg') center (center / cover) no-repeat;
-    height: 889px;
     &__tabs {
         max-width: 843px;
         margin: 0 auto;
@@ -48,13 +47,10 @@
     }
     &__carousel {
         position: relative;
-        height: 560px;
         max-width: 940px;
         margin: 0 auto;
         margin-top: 35px;
-        border-image: url('../../img/macbook-air.png') 35 125 88 125 stretch stretch;
-        border-style: solid;
-        border-width: 30px 89px 61px 100px;
+        max-height: 560px;
             img {
                 width: 100%;
             }

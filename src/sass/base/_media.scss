@@ -103,11 +103,6 @@
     }
     .solutions {
         padding: 45px 0 58px 0;
-        height: 770px;
-        &__carousel {
-            border-image: url('../../img/macbook-air.png') 38 126 59 125 stretch stretch;
-            border-width: 28px 40px 111px 54px;
-        }
         &__tab {
             font-size: 12px;
         }
