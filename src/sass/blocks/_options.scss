@@ -1,0 +1,58 @@
+.options {
+    padding: 79px 0 181px 0;
+    height: 580px;
+    background: url('../../img/third-bg.jpg') center (center / cover) no-repeat;
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 90px;
+    }
+    &__item {
+        color: #ffffff;
+        width: 520px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 26px;
+        text-align: right;
+        position: relative;
+        z-index: 2;
+        &:after {
+            content: '';
+            display: block;
+            width: 167px;
+            height: 167px;
+            position: absolute;
+            background-color:rgba(0, 194, 240, 0.5);
+            bottom: 0;
+            z-index: -1;
+        }
+        &:first-child {
+            margin-right: 40px;
+            padding-right: 39px;
+            &:after {
+                right: 0px;
+                top: -37px;
+            }
+        }   
+        &:last-child {
+            margin-left: 40px;
+            text-align: left;
+            padding-left:39px;
+            &:after {
+                left: 0px;
+                top: -37px;
+            }
+        }
+    }
+    &__title {
+        display: block;
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 22px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        z-index: 1;
+        }
+    }
