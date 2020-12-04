@@ -317,11 +317,23 @@
             background-color: rgba(0,0,0,0.9);
             transform: translateX(-100%);
             transition: 0.5s all;
+            display: none;
             &_active {
+                display: block;
                 transform: translateX(0);
             }
         }
+        &__item {
+            width: 100%;
+        }
+        &__link {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
         &__burger {
+            display: block;
             height: 20px;
             margin-top: 20px;
             &_active {
