@@ -8,9 +8,8 @@ function carousel(wrapperSelector, innerSelector, allSlidesSelector, nextArrow, 
       arrowPrev = document.querySelector(prevArrow),
       dots = document.querySelectorAll(allDotsSelector);
 
-      let slideWidth = 100 / slides.length,
-      availableWidth = `${slideWidth * (slides.length - 1)}`,
-      pos = 0;
+    let slideWidth = 100 / slides.length,
+        pos = 0;
   
   inner.style.width = `${100 * slides.length}%`;
   
