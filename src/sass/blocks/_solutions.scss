@@ -47,13 +47,17 @@
     }
     &__carousel {
         position: relative;
-        max-width: 940px;
+        overflow: hidden;
+        width: 90%;
         margin: 0 auto;
         margin-top: 35px;
-        max-height: 560px;
             img {
                 width: 100%;
             }
+    }
+    &__inner {
+        transition: 0.3s all;
+        display: flex;
     }
     &__arrow {
         height: 60px;
@@ -65,13 +69,13 @@
         background: url('../../img/second-slider/prev-arrow.png') center (center / cover) no-repeat;
         top: 50%;
         transform: translateY(-50%);
-        left: -159px;
+        left: 0;
     }
     &__arrow-next {
         background: url('../../img/second-slider/next-arrow.png') center (center / cover) no-repeat;
         top: 50%;
         transform: translateY(-50%);
-        right: -159px;
+        right: 0;
     }
 
 }

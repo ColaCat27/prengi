@@ -1,6 +1,6 @@
 'use strict';
 
-function carousel(wrapperSelector, innerSelector, allSlidesSelector, nextArrow, prevArrow, allDotsSelector) {
+function carousel(wrapperSelector, innerSelector, allSlidesSelector, nextArrow, prevArrow, allDotsSelector, dotsActiveClass) {
     const carouselWrapper = document.querySelector(wrapperSelector),
       inner = document.querySelector(innerSelector),
       slides = document.querySelectorAll(allSlidesSelector),
@@ -48,10 +48,10 @@ function carousel(wrapperSelector, innerSelector, allSlidesSelector, nextArrow, 
       let coord = index * slideWidth;
       
       dots.forEach((dot, i) => {
-          dot.classList.remove('promo__dot_active');
+          dot.classList.remove(dotsActiveClass);
   
           if (i === index) {
-              dot.classList.add('promo__dot_active');
+              dot.classList.add(dotsActiveClass);
           }
       });
       
@@ -59,4 +59,6 @@ function carousel(wrapperSelector, innerSelector, allSlidesSelector, nextArrow, 
   };
 }
 
-carousel('.promo__carousel', '.promo__carousel-inner', '.promo__offer','.promo__arrow-next','.promo__arrow-prev','.promo__dot');
+carousel('.promo__carousel', '.promo__carousel-inner', '.promo__offer','.promo__arrow-next','.promo__arrow-prev','.promo__dot', 'promo__dot_active');
+
+carousel('.solutions__carousel', '.solutions__inner', '.solutions__offer', '.solutions__arrow-next', '.solutions__arrow-prev', '.solutions__tab', 'solutions__tab_active');
