@@ -57,8 +57,24 @@ function carousel(wrapperSelector, innerSelector, allSlidesSelector, nextArrow, 
       
       inner.style.transform = `translateX(-${coord}%)`;
   };
-}
+};
 
 carousel('.promo__carousel', '.promo__carousel-inner', '.promo__offer','.promo__arrow-next','.promo__arrow-prev','.promo__dot', 'promo__dot_active');
-
 carousel('.solutions__carousel', '.solutions__inner', '.solutions__offer', '.solutions__arrow-next', '.solutions__arrow-prev', '.solutions__tab', 'solutions__tab_active');
+
+
+function burger(menuSelector, burgerSelector, menuActiveClass, burgerActiveClass) {
+    const menu = document.querySelector(menuSelector),
+          burger = document.querySelector(burgerSelector);
+
+    function showMenu() {
+    burger.classList.toggle(burgerActiveClass);
+    menu.classList.toggle(menuActiveClass);
+    }
+
+    burger.addEventListener('click', () => {
+        showMenu();
+    });
+};
+
+burger('.promo__list','.promo__burger','promo__list_active','promo__burger_active');

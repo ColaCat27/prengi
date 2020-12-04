@@ -278,7 +278,7 @@
         position: relative;
         overflow: hidden;
         &__nav {
-            width:8%;
+            width: 8%;
         }
         &__img {
             display: none;
@@ -317,9 +317,7 @@
             background-color: rgba(0,0,0,0.9);
             transform: translateX(-100%);
             transition: 0.5s all;
-            display: none;
             &_active {
-                display: block;
                 transform: translateX(0);
             }
         }
@@ -336,16 +334,19 @@
             display: block;
             height: 20px;
             margin-top: 20px;
+            div {
+                transition: 0.5s all;
+            }
             &_active {
                 div {
                     &:first-child {
-                        transform: translateY(7px) rotate(35deg);
+                        transform: translateY(5px) rotate(35deg);
                     }
                     &:nth-child(2) {
-                        display: none;
+                        opacity: 0;
                     }
                     &:last-child {
-                        transform: translateY(0px) rotate(-35deg);
+                        transform: translateY(-9px) rotate(-35deg);
                     }
                 }
             }
