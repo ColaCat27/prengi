@@ -1,0 +1,43 @@
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0,0.56);
+    display: none;
+}
+
+.modal {
+    display: block;
+    position: absolute;
+    width: 380px;
+    min-height: 400px;
+    background-color: #f2f2f2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 38px 40px 40px 40px;
+    &__title {
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__subtitle {
+        color: #0d0d0d;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+    }
+    &_mini {
+        min-height: 140px;
+    }
+    &__close {
+        position: absolute;
+        right: -40px;
+        top: -20px;
+        color: #000;
+        font-size: 41px;
+        cursor: pointer;
+    }
+}

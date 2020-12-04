@@ -1,0 +1,33 @@
+.feed-form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+    input {
+        height: 50px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        border: none;
+        margin-bottom: 15px;
+        padding: 0 20px;
+        color: #4b4b4b;
+        font-size: 14px;
+        font-weight: 300;
+        &:nth-child(3) {
+            margin-bottom: 20px;
+        }
+    }
+    label {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    label.error {
+        border: none;
+    }
+    &_mt25 {
+        margin-top: 25px;
+    }
+    .error {
+        border: 1px solid red;
+        }
+}
