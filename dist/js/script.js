@@ -36,6 +36,8 @@ arrowPrev.addEventListener('click', () => {
 
 dots.forEach((item, i) => {
     item.addEventListener('click', () => {
+    console.log(`Нажал на точку и вот её номер ${i}`)
+    pos = i;
     moveToSlide(i);
     })
 })
@@ -43,11 +45,12 @@ dots.forEach((item, i) => {
 
 function moveToSlide(index = 1) {
     let coord = index * slideWidth;
-    
+    console.log(`index внутри функции равен ${index}`)
     dots.forEach((dot, i) => {
         dot.classList.remove('promo__dot_active');
         if (i === index) {
             dot.classList.add('promo__dot_active');
+            console.log(`Номер точки внутри функции равен ${i}`);
         }
     })
     
