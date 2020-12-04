@@ -70,8 +70,11 @@
     }
     &__carousel {
         position: relative;
+        overflow: hidden;
+        width: 100%;
         &-inner {
             transition: 0.5s all;
+            display: flex;
         }
     }
     &__navigation {
