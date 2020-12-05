@@ -1,5 +1,10 @@
 .header {
+    transition: 0.2s all;
     padding: 20px 0 19px 0;
+    &__arrow {
+        display: none;
+        transform: rotate(180deg);
+    }
     .contacts {
         display: flex;
         justify-content: space-between;

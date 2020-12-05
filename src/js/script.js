@@ -123,4 +123,17 @@ function toggleModal(buttons, over, closeButton, mainModal, thanksModal, allModa
 
 };
 
-toggleModal('.button', '.overlay', '.modal__close', '.modal_main', '.modal_mini', '.modal')
+toggleModal('.button', '.overlay', '.modal__close', '.modal_main', '.modal_mini', '.modal');
+
+const contactBtn = document.querySelector('.header__arrow'),
+      contacts = document.querySelector('.contacts'),
+      header = document.querySelector('.header');
+
+function toggleContacts() {
+    contactBtn.classList.toggle('header__arrow_active');
+    contacts.classList.toggle('contacts_active');
+};
+
+contactBtn.addEventListener('click', () => {
+    toggleContacts();
+});

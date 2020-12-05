@@ -270,8 +270,27 @@
 
 @media (max-width: 575px) {
     .header {
+        &__arrow {
+            display: block;
+            margin: 0 auto;
+            width: 20px;
+            height: 20px;
+            transition: 0.5s all;
+            &_active {
+                transform: rotate(0deg);
+            }
+        }
+
         .contacts {
+            height: 0px;
+            opacity: 0;
+            transition: 0.5s all;
             flex-direction: column;
+            &_active {
+                margin-top: 20px;
+                height: 500px;
+                opacity: 1;
+            }
         }
     }
     .promo {
