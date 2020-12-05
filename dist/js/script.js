@@ -78,3 +78,49 @@ function burger(menuSelector, burgerSelector, menuActiveClass, burgerActiveClass
 };
 
 burger('.promo__list','.promo__burger','promo__list_active','promo__burger_active');
+
+function toggleModal(buttons, over, closeButton, mainModal, thanksModal, allModalsSelector) {
+    const body = document.querySelector('body'),
+          btns = document.querySelectorAll(buttons),
+          overlay = document.querySelector(over),
+          closeBtn = document.querySelector(closeButton),
+          main = document.querySelector(mainModal),
+          thanks = document.querySelector(thanksModal),
+          allModals = document.querySelectorAll(allModalsSelector);
+
+    function showModal(modal = main) { 
+        allModals.forEach(item => {
+            item.style.display = 'none';
+        });
+        overlay.style.display = 'block';
+        overlay.classList.add('opacity_animate');
+        modal.style.display = 'block';
+        body.style.overflow = 'hidden';
+    };
+
+    function closeModal() {
+        allModals.forEach(item => {
+            overlay.style.opacity = '0';
+            overlay.style.display = 'none'
+            overlay.classList.remove('opacity_animate');
+        });
+        body.style.overflow = 'auto';
+    };
+
+    btns.forEach(item => {
+        item.addEventListener('click', () => {
+            showModal();
+        });
+    });
+
+    closeBtn.addEventListener('click', () => {
+        closeModal();
+    });
+
+    overlay.addEventListener('click', () => {
+        closeModal();
+    });
+
+};
+
+toggleModal('.button', '.overlay', '.modal__close', '.modal_main', '.modal_mini', '.modal')

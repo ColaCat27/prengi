@@ -1,0 +1,14 @@
+.opacity_animate {
+    animation-name: opacityAnim;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opacityAnim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
