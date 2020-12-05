@@ -1,6 +1,9 @@
 .solutions {
     padding: 79px 0 61px 0;
     background: url('../../img/second-bg.jpg') center (center / cover) no-repeat;
+    .container {
+        position: relative;
+    }
     &__tabs {
         max-width: 843px;
         margin: 0 auto;
@@ -67,14 +70,12 @@
     }
     &__arrow-prev {
         background: url('../../img/second-slider/prev-arrow.png') center (center / cover) no-repeat;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 55%;
         left: 0;
     }
     &__arrow-next {
         background: url('../../img/second-slider/next-arrow.png') center (center / cover) no-repeat;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 55%;
         right: 0;
     }
 
