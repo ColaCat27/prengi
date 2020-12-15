@@ -107,12 +107,12 @@
         position: absolute;
     }
     &__arrow-prev {
-        background: url('../../img/prev-arrow.png') center (center / cover) no-repeat;
+        background: url('../img/prev-arrow.png') center (center / cover) no-repeat;
         left: -10px;
         top: 1px;
     }
     &__arrow-next {
-        background: url('../../img/next-arrow.png') center (center / cover) no-repeat;
+        background: url('../img/next-arrow.png') center (center / cover) no-repeat;
         top: 1px;
         right: 15px;
     }

@@ -14,7 +14,7 @@
         border: 1px solid #ececec;
         &:after {
             content: '';
-            background: url('../../icons/question.png') center (center / cover) no-repeat;
+            background: url('../icons/question.png') center (center / cover) no-repeat;
             width: 90px;
             height: 93px;
             position: absolute;
@@ -22,7 +22,7 @@
             right: 0;
         }
         &_apply:after {
-            background: url('../../icons/apply.png') center (center / cover) no-repeat;
+            background: url('../icons/apply.png') center (center / cover) no-repeat;
             width: 102px;
         }
     }
