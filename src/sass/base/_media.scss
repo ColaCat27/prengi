@@ -335,8 +335,12 @@
             height: 100%;
             background-color: rgba(0,0,0,0.9);
             transform: translateX(-100%);
-            transition: 0.5s all;
+            transition: 0.3s all;
+            opacity: 0;
+            overflow: hidden;
             &_active {
+                opacity: 1;
+                overflow: visible;
                 transform: translateX(0);
             }
         }
@@ -354,18 +358,18 @@
             height: 20px;
             margin-top: 20px;
             div {
-                transition: 0.5s all;
+                transition: .3s all;
             }
             &_active {
                 div {
                     &:first-child {
-                        transform: translateY(5px) rotate(35deg);
+                        transform: translateY(5px) rotate(45deg);
                     }
                     &:nth-child(2) {
                         opacity: 0;
                     }
                     &:last-child {
-                        transform: translateY(-9px) rotate(-35deg);
+                        transform: translateY(-9px) rotate(-45deg);
                     }
                 }
             }

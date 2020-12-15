@@ -137,3 +137,5 @@ function toggleContacts() {
 contactBtn.addEventListener('click', () => {
     toggleContacts();
 });
+
+new WOW().init();
